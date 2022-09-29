@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script> 
+</head>
+<body>
+    <p style="background-color: blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi esse perspiciatis quia enim exercitationem delectus, distinctio et? Provident doloremque iusto accusamus reiciendis eos officiis vel nesciunt facilis asperiores! Voluptas accusamus qui illum maiores non deleniti voluptatum possimus eaque itaque impedit, doloremque facere nihil quod odit libero delectus culpa, recusandae optio!</p>
+    <div style="display: none;">div 1</div>
+    <img src="img/football.jpg">
+    <button onclick="change()">change</button>
+
+    <script>
+        //this example will show you speciality of using function of jquery over java Script
+        function change(){
+
+           
+            //to hide a element
+            //$("p").hide();
+
+            //to display a hidden element
+            //$("div").show();
+
+            //toggling - if it is hidden it willshow and vice versa
+            //$("p").toggle();
+
+            //$("p").slideUp("slow");
+
+            //$("p").slideDown("slow");
+
+            //$("p").slideToggle("slow");
+
+            //$("img").fadeOut("slow");
+            //$("img").fadeIn("slow");
+            //$("img").fadeToggle();
+
+            $("img").fadeOut(5000);
+            $("img").attr({"src":"img/googlelogo.png"});
+            $("img").fadeIn(5000);
+
+
+
+        };
+
+    </script>
+    
+</body>
+</html>

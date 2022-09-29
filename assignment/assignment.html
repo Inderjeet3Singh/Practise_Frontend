@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        form{
+            border: 1px solid rgb(61, 56, 56);
+            padding:60px;
+        }
+        #whole{
+            margin: 2px;
+
+        }
+        h3{
+            text-align: center;
+        }
+
+        #second{
+            display:inline-block;
+            border:2px solid white;
+            width:50%;
+        }
+        #secondhalf{
+            display:inline-block;
+            border: white;
+            margin: 30%;
+            width:50%;
+
+        }
+    </style>
+    <form action="">
+        <div id="whole">
+        
+        <h3><u>Application for the Post of Project Engineer</u></h3>
+        <b>1. Postion Code (select one): </b>
+        <div id="first" >
+        <select name = "select"  >
+            <option value="">Select</option>
+            <option value="01">0010616061</option>
+            <option value="02">0016116162</option>
+           </select>
+        </div>
+        <hr>
+        <div id="second">
+        <b>2. Name:</b>   <input type="text" placeholder="name"><br>
+        <b>3. Father's Name: <input type="text"><br>
+        <b>4. Date of Birth: <input type="date"> Age<input type="text">
+            <br>
+        <b>5. Gender </b>
+            <select name="gender">
+          
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="transgender">transgender</option>
+        </select>
+            <br>
+
+            <b>6. Nationality:</b><input type="text">
+            <br>
+        <b>7. Martial Status:</b>
+        <select name="status">
+            <option value="">Select</option>
+            <option value="Married">Married</option>
+            <option value="single">Single</option>
+            </select><br>
+            <b>8. Whether Belongs to (select one):</b>
+            <input type="radio" value="SC" name="category" id ='id1'><span>SC</span>
+            <input type="radio" value="ST" name="category" id ='id2'><span>ST</span>
+            <input type="radio" value="OBC" name="category" id ='id3'><span>OBC</span>
+            <input type="radio" value="PWD" name="category" id ='id4'><span>PWD</span>
+            <input type="radio" value="General" name="category" id ='id5'><span>General</span>
+           <br>
+        </div>
+        <div id="secondhalf">
+            <b>Upload Your Photo:<b>
+                <input type="file" name="profile photo" accept="image/jpeg/jpg">
+
+            </div>
+            <hr>
+            <b>9. Proof of Identity: </b> <select name="Identity">
+                <option value="Aadhaar">Aadhaar Number</option>
+                <option value ="Voter">Voter Id</option>
+                <option value="DrivingLicense">Driving License</option>
+                </select>
+                <input type="text" placeholder="write your Aadhaar/PAN number">
+
+                <br>
+                <b>10. Address for Correspondence: </b>
+                <textarea name="address"  ></textarea>
+
+
+
+
+</div>        
+
+   
+</form>
+    
+</body>
+</html>
+

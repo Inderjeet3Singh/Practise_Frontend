@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <div style="background-color: blue; display:inline-block; "><h1>Addition calculator</h1></div><br>
+    <div style="padding:10px 0 0 0"><input id="a" type="number" style="background-color: yellow"         placeholder="enter the first digit">
+    <input id="b" type="number" style="background-color: yellow;" placeholder="enter the second digit">
+</div>
+    <br>
+    <div id="id" ></div> <br>
+
+    <button id="button" onclick="functionName()" style="font-size: medium; background-color: red;">Add</button>
+
+    <script>
+        //addition of two numbers
+        function functionName(){
+              
+            let a=document.getElementById("a").value;
+            let b= document.getElementById("b").value;
+
+            let sum= parseInt(a)+parseInt(b);
+            document.getElementById("id").innerHTML="the sum of "+ a + " + "
+             + b  +" = " + sum; 
+            return;       
+        }
+
+
+    </script>
+    
+</body>
+</html>

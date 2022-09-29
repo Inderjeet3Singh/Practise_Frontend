@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <style>
+     
+
+      .container {
+        /* background-color: aqua; */
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      form {
+        border: 1px solid rgb(61, 56, 56);
+        margin:10px;
+      }
+      .secton{
+          display:grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(7,1fr);
+          grid-gap:10px;
+         
+      }
+      h3 {
+        /* background-color: brown; */
+        text-align: center;
+
+      }
+
+      #section-2{
+          display:grid;
+          grid-template-columns: 2fr 1fr;
+          grid-gap:10px white;
+          /* background-color: coral; */
+
+      }
+      #section-3{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border:10px;
+        grid-gap: 10px;
+        background-color: red;
+      }
+
+      #postion{
+          margin-left:30px;
+      }
+      #box{
+          margin-left:30px;
+      }
+
+      .block{
+           /* background-color: brown;  */
+          display: flex;
+          flex-direction: row  ;
+          margin: 15px 10px 0 10px;
+          
+      }
+      .label{
+        /* background-color: red; */
+        width: 20%;
+      }
+
+      .input{
+          justify-content: space-between;
+          width: 80%;
+          /* background-color: blue */
+      }
+      .inputage{
+        width: 60%;
+      }
+      .age_block{
+        width: 20%;
+        display: flex;
+        flex-direction: row  ;
+        justify-content: center;
+      }
+    
+      
+      .age_span{
+       
+        
+
+      }
+      #dropdown{
+        width:80%;
+        
+
+      }
+      .age_value_span{
+        margin: 0 5px 0 5px;
+        padding: 0 5px 0 5px;
+        background-color: #dedede
+      }
+      .addressAndProff{
+       
+      }
+      .red-star{
+        color: red;
+      }
+      .proof{
+        display: flex;
+        flex-direction: row  ;
+        justify-content: space-around;
+        
+      }
+      .proof label{
+        width: 30%;
+
+      }
+      .proof select{
+        width: 30%;
+
+      }
+      .proof input{
+        width: 30%;
+
+      }
+      .correspondence{
+
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="section">
+          <!-- <div class="section" id="section-1">
+            <h3><u>Application for the Post of Project Engineer</u></h3>
+            <div class="block">
+            <span >1. Postion Code(select one):</span> 
+            
+                <select name = "select" id="dropdown" >
+                    <option value="default">Select</option>
+                    <option value="01">0010616061</option>
+                    <option value="02">0016116162</option>
+                </select>
+            
+        </div>
+            <hr>
+          </div>
+          <div class="section" id="section-2">
+              <div class="section-2" id="section-2-left">
+                  <div class="block">
+                 <span class="label"> 2. Name:</span><input class="input" type="text">
+               </div>
+               <div class="block">
+                <span  class="label"> 3. Father's Name:</span><input class="input" type="text" >
+               </div>
+               <div class="block">
+                <span  class="label"> 4. Date of Birth:</span>
+                <input class="input inputage" type="date" >  
+                <div class="age_block">
+                <span class="age_span">Age</span><span class="age_value_span">25</span>
+              </div>
+               </div>
+               <div class="block">
+                <span  class="label"> 5. Gender:</span> 
+                <select name="gender" id="dropdown">
+                    <option value="default">Select</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="transgender">transgender</option>
+                </select>
+               </div>
+               <div class="block">
+                <span> 6. Nationality:</span><span id="box"><input type="text" >
+               </div>
+               <div class="block">
+                <span> 7. Martial Status:</span>
+               
+                <select name="status" id="dropdown">
+                    <option value="default">Select</option>
+                    <option value="Married">Married</option>
+                    <option value="single">Single</option>
+                    </select>
+               </div>
+               <div class="block">
+               <span>8. Whether belongs to (select One):</span>
+               
+               <input type="radio" value="SC" name="category" id ='id1'><span>SC</span>
+            <input type="radio" value="ST" name="category" id ='id2'><span>ST</span>
+            <input type="radio" value="OBC" name="category" id ='id3'><span>OBC</span>
+            <input type="radio" value="PWD" name="category" id ='id4'><span>PWD</span>
+            <input type="radio" value="General" name="category" id ='id5'><span>General</span>
+          </div>
+              </div>
+              <div class="section-2" id="section-2-right">
+                  <b>Upload your photo</b> <br>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Blank_square.svg/2048px-Blank_square.svg.png" alt="Profile Photo" height="130px"><br>
+                  <input type="file" name="profile photo" accept="image/jpeg"> <br>  
+                  <br>
+                  
+              </div>  
+              <hr>
+          </div>
+          
+          <div class="block">
+           <span>9. Proof of identity:</span> 
+           <select name="Proof Of Identiy" id="dropdown">
+             <option value="default">Select Proof Of Identiy</option>
+             <option value="Aadhaar Number">Aadhaar Number</option>
+             <option value="Voter Id">Voter Id</option>
+             <option value="Passport">Passport</option>
+           </select>
+           <input type="text" class="input" placeholder="Write your Aadhaar/PAN number">
+          </div>
+          <div class="section" id="section-3">
+
+            <div class="section-3" id="section-3-left">
+              <div class="block">
+                <span class="label"> 10. Address of correspondance:</span>
+                <textarea  type="text"></textarea>
+
+                select State:
+              </div>
+
+          </div> -->
+
+
+         <div class="addressAndProff">
+
+          <div class="proof">
+            <label>Proof of Identity<span class="red-star">*</span></label>
+            <select name="proof-type">
+              <option value="" disabled selected hidden>--Select proof type--</option>
+              <option value="Adhar" >Adhar Number</option>
+              <option value="PAN">PAN Number</option>
+            </select>
+            <input type="text">
+
+          </div>
+
+          <div class="address">
+
+            <div class="correspondence">
+              <label for="">10 Address for Corresspondence<span class="red-star">*</span></label>
+             <textarea rows="3"></textarea>
+
+            </div>
+
+          </div>
+
+
+          
+
+
+
+         </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

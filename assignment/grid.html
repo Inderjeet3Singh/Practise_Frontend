@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns:  1fr 1fr ;
+            grid-template-rows: repeat(7, 1fr);
+            grid-gap: 2px;
+            grid-auto-rows:minmax(20,auto);
+            grid-auto-columns: minmax(20px,auto);
+            
+            
+        }
+        .section{
+            
+            background-color: red;
+            border : 3px solid green;
+            gap:2px;
+        }
+        #section-1{
+            display:grid;
+            grid-template-columns:  1fr 1fr;
+            grid-template-rows:repeat(3,1fr);
+            background-color:blue;
+            border: 2px solid yellow;
+            grid-gap: 2px;
+
+        }
+        #item1{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start:2;
+            grid-row-end:3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="section" id="section-1">
+            <div class="item" id="item1">item1</div>
+            <div class="item" id="item2">item2</div>
+        </div>
+            <div class="section" >Section 2</div>
+            <div class="section" >Section 3</div>
+            <div class="section" >Section 4</div>
+            <div class="section" >Section 5</div>
+            <div class="section" >Section 6</div>
+            <div class="section" >Section 6</div>
+            
+
+
+
+        
+    </div>
+</body>
+</html>

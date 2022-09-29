@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays declaration</title>
+</head>
+<body>
+    <h2 style="background-color:yellow;">JavaScript Arrays Declaration</h2>
+    <p id="demo1" style="font-size:large;"></p>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+<script>
+    const cars =["saab", "volvo", "bmw"];
+    //chnaging an array element
+    cars [0] ="audi";
+
+    //accessing th full array element
+    document.getElementById("demo1").innerHTML=cars;
+    
+   //accessing an array element, we use numbers to access elements unlike in object where we use "keys" to access the element
+    let car= cars[0];
+    document.getElementById("demo2").innerHTML=car;
+
+    //array is a type of object
+    document.getElementById("demo3").innerHTML= typeof cars;
+
+    //in JS array can store  variable of different types
+    const mixed=["john", "doe", 34];
+
+    //in array we can have objects which is called "array of objects"
+    const stu=[ {name:"baba", center:"Noida", age:26},
+                {name:"vicky", center:"blr", age:26}
+              ];
+
+    // in array we also can have functions also
+    const fun =[];
+    fun[0]= Date.now;
+    fun[1]= "this is current date";
+    fun[2]= myFunction();
+
+    function myFunction(){
+    
+    }
+    
+    document.getElementById("demo4").innerHTML= fun;
+
+    //arrays properties and methods
+
+    //1. length method
+    const fruits= ["banana", "orange", "grapes", "mango"];
+    let length= fruits.length;
+
+    document.write("the lenght of array is = " +length);
+
+    //looping array elements
+    //1. by traditional method
+    let text1= "<ul>";
+        for(i=0; i<length; i++){
+            text1 += "<li>" +fruits[i] +"</li>";
+        }
+     
+        text1 += "</ul>";
+
+    document.getElementById("demo5").innerHTML= text1;
+
+    //2. by "Array.forEach()" function
+    
+    let text2 = "<ul>";
+        fruits.forEach(myFruits);
+        text2 += "</ul>";
+    
+        function myFruits(value){
+            text2 += "<li>" + value + "</li>";
+        }
+    //using dom to create an element
+    let ele= document.createElement("div");
+    ele.innerHTML= text2;
+    document.body.appendChild(ele);
+
+
+</script>
+    
+</body>
+</html>

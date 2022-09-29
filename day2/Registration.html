@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <pre><h2>Registration Form</h2></pre>
+    </header>
+    <main>
+        <pre>
+            
+        <form action="/action.php">
+        User Id        : <input type="text" placeholder="User Id" size="5" required>
+        <br>
+        Password       : <input type="password" placeholder="password" minsize="5" maxsize="8" required>
+        <br>
+        First Name     : <input type="text" placeholder="first name" size="20" required>
+        <br>
+        Last Name      : <input type="text"  placeholder="last name" size="20" required>
+        <br>
+        Middle Name    : <input type ="text" placeholder="middle name" size="20">
+        <br>
+        Email id       : <input type="email" placeholder="email" size="30" required>
+        <br>
+        mobile number  : <input type="tel" placeholder="mobile"  maxlength="10"  required>
+        <br>
+        Alternate no.  : <input type="tel" placeholder="alternate" maxlength="10">
+        <br>
+        Sex:      <input type="radio" value="male" name="sex" id="id1" /><span>Male</span>
+                  <input type="radio" value="female" name="sex" id="id2"><span>Female</span>
+             
+        Language: <input type="checkbox" value="English" name="lang"><span>English</span>
+                  <input type="checkbox" value="Hindi" name="lang"><span>Hindi</span>
+                  <input type="checkbox" value="Marathi" name="lang"><span>Marathi</span>
+                  <input type="text"   placeholder="other" name="lang" size="20">
+        
+        Sports:  <select name="sports">
+                 <option selected="" value="Default">(Please select sport category)</option>
+                 <option value="Cricket">Cricket</option>
+                 <option value="Volleyball">Volleyball</option>
+                 <option value="Football">Football</option>
+                 <option value="Basketball">Basketball</option>
+        </select>
+        <br>
+        Address:
+        Plot/house no. :  <input type="text" placeholder="Plot/house no." required>
+
+        Street         :  <input type="text" placeholder="street" required>
+
+        Landamark      :  <input type="text" placeholder="landmark">
+
+        District       :  <input type="text" placeholder="district" required>
+
+        State          :  <input type="text" placeholder="state" required>
+
+        Pincode        :  <input type="number" placeholder="pincode" required>
+        <br>
+        Image          : <input type="file" name="image" accept="/image/.jpeg/.jpg" required>
+        <br>
+        Feedback       : <textarea name="feedback" placeholder="comment"> </textarea>
+        <input type="submit" value="submit">
+        </form>
+    </pre>
+    </main>
+    <footer>
+        Note: Please fill required field. <br>
+        Incase of any issue please contact: pradeep@jaantu
+    </footer>
+    
+</body>
+</html>
